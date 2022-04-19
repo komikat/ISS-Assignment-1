@@ -1,3 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-grep -wo '[[:alnum:]]\+' quotes.txt | sort | uniq -c
+filename=$1
+grep -wo '[[:alnum:]]\+' $filename | sort | uniq -c
